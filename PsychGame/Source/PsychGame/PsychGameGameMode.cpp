@@ -12,5 +12,6 @@ APsychGameGameMode::APsychGameGameMode()
 	{
 		PlayerControllerClass = PCBlueprint.Class;
 	}
+	DefaultPawnClass = NULL;
 }
 

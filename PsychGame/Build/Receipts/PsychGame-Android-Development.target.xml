@@ -11,5 +11,8 @@
     <BuildProduct Path="$(ProjectDir)\Binaries\Android\PsychGame-armv7-es2.apk" Type="Executable" />
   </BuildProducts>
   <RuntimeDependencies />
+  <AdditionalProperties>
+    <AdditionalProperty Name="AndroidPlugin" Value="Plugins\Runtime\GearVR\Source\GearVR\GearVR_APL.xml" />
+  </AdditionalProperties>
   <bRequireDependenciesToExist>true</bRequireDependenciesToExist>
 </BuildReceipt>

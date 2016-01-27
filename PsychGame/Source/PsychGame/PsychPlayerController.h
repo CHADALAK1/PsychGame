@@ -16,7 +16,7 @@ class PSYCHGAME_API APsychPlayerController : public APlayerController
 public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Question)
-	FText Name;
+	FString Name;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Question)
 	FText FavColor;
@@ -26,6 +26,15 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Question)
 	int32 FeelingValue;
-	
+
+	UFUNCTION(BlueprintCallable, Category = Save)
+	void SaveProgress(FString SName);
+
+	UFUNCTION(BlueprintCallable, Category = Load)
+	void LoadName();
+
+	UProgressSave *SaveGameInstance;
+
+	void BeginPlay() override;
 	
 };
